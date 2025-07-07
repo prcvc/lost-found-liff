@@ -39,11 +39,11 @@
     </label>
 
     <label>แผนกวิชา:
-      <input name="department" placeholder="เช่น ช่างไฟฟ้า" required>
+      <input name="department" placeholder="เช่น การบัญชี" required>
     </label>
 
     <label>ห้อง:
-      <input name="room" placeholder="เช่น ปวช.2/1" required>
+      <input name="room" placeholder="เช่น ชพบ.2/1" required>
     </label>
 
     <label>รายละเอียดของหาย:
@@ -92,7 +92,7 @@
       data.timestamp = new Date().toLocaleString("th-TH");
 
       try {
-        const res = await fetch("https://script.google.com/macros/s/AKfycbwkjw4xHDQBuBzH_GIPi9-iSxf44-9EO4Fit5N9H2Q7hxSzKmUJ5p0C2ycnSYTtMIRy/exec", {
+        const res = await fetch("https://script.google.com/macros/s/AKfycbzIxqStkqO_9Z04kvYVTr2QO4wvJy5qgyZs6r5tMrtJDUmbUq-k_6lkkcoRpC2JR5o/exec", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data)
